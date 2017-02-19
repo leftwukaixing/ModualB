@@ -1,0 +1,204 @@
+
+@font-face {
+  font-family: 'Vollkorn-Bold';
+  src: url("../Fonts/Vollkorn/Vollkorn-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vollkorn-Regular';
+  src: url("../Fonts/Vollkorn/Vollkorn-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vollkorn-BoldItalic';
+  src: url("../Fonts/Vollkorn/Vollkorn-BoldItalic.ttf") format("truetype"),
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vollkorn-Italic';
+  src: url("../Fonts/Vollkorn/Vollkorn-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  padding: 0;
+  margin: 0px;
+  font-weight: 300;
+  width: 100%;
+  height: 1450px;
+  background: linear-gradient(to bottom, rgb(250,239,202), rgb(250,226,140), rgb(250,230,171));
+}
+a {
+  color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Vollkorn-Regular"
+}
+a:hover, a:active, a:focus{
+  font-weight: 700px;
+  font-family: "DancingScript-Bold";
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:visited{
+  font-weight: 700px;
+  color: rgba(0,0,0,1);
+  font-family: "DancingScript-Bold";
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+p {
+  font-family: "Vollkorn-Regular";
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "DancingScript-Bold";
+  font-weight: 700px;
+  margin: 10px 0 30px 0;
+}
+
+cite {
+  font-family: "Vollkorn-Regular";
+  font-size: 25px;
+}
+
+::selection {
+  background: gold;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+} 
+.hotel-header {
+  background-color: #efefef;
+  flex: 100%;
+  margin-left: 74%;
+  margin-right: 5%;
+}
+.hotel-header .hotel-button {
+  background-color: rgba(255,255,255,0);
+  border: 0;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+.hotel-header button:hover {
+  display: block;
+}
+.copyrights{
+  margin-top: 100%;
+  font-family: "Vollkorn-Bold";
+	font-size:15px;
+}
+.hotel-aside {
+  flex: 1;
+  /*float: left;*/
+  margin-left: 5%;
+  margin-top: 5%;
+  height: 100%;
+  background: gold;
+}
+.hotel-secondbar {
+  flex: 1.5;
+  background: white;
+  margin-top: 5%;
+  height: 100%;
+}
+.hotel-detail {
+  flex: 5.5;
+  background: white;
+  margin-top: 5%;
+}
+.hotel-ads {
+  flex: 2.5;
+  background: #efefef;
+  margin-right: 5%;
+  margin-top: 5%;
+  height: 100%
+}
+#hotel-main-menu ul {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+#hotel-main-menu ul li {
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style: none;
+}
+#hotel-main-menu ul li a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 5px;
+  font-weight: 300;
+}
+.container-footer {
+  width: 800px;
+  height: 200px;
+  background-color: #efefef;
+  margin-top: 5%;
+}
+
+.hotel-footer {
+  width: 25%;
+  background-color: #efefef; 
+  float: left;
+  text-align: center;
+  margin-top: 5%;
+  height: 100%;
+  font-weight: 400;
+  /*color: rgba(0, 0, 0, 0.6);*/
+}
+ .hotel-footer span {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: block;
+  font-size: 10px;
+  font-family: "Vollkorn-Italic";
+}
+.hotel-footer h3 {
+  margin-left: 5%;
+  text-align: left;
+}
+.hotel-meeting img {
+  height: 240px;
+  width: 32%;
+  filter: grayscale(90%),brightness(120%);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+}
+{
+    filter: grayscale(0),brightness(100%);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+
+.hotel-meeting .img-text {
+  font-family: "Vollkorn-BoldItalic";
+  font-size: 30px;
+  color: white;
+  position:absolute;
+  z-index:2;
+  left: 10px;
+}

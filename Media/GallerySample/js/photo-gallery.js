@@ -485,7 +485,7 @@ function init() {
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", handleFileLoad);
 	loader.addEventListener("complete", handleComplete);
-loader.loadFile({src:"images/photos_viewer_atlas_.json", type:"spritesheet", id:"photos_viewer_atlas_"}, true);
+loader.loadFile({src:"Media/GallerySample/images/photos_viewer_atlas_.json", type:"spritesheet", id:"photos_viewer_atlas_"}, true);
 	loader.loadManifest(lib.properties.manifest);
 }
 

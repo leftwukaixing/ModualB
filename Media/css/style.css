@@ -177,11 +177,9 @@ cite {
   margin-left: 5%;
   text-align: left;
 }
-.hotel-meeting {
-  /*margin-left:5%;*/
+#hotel-meeting {
+  margin-left:5%;
   position:relative;
-  white-space: nowrap;
-  /*float: left;*/
 }
 #hotel-meeting img {
   margin-right: 1%;
@@ -203,12 +201,12 @@ cite {
 }
 
 #hotel-meeting .img-text {
-  /*float: left;*/
+  width: 32%;
   font-family: "Vollkorn-BoldItalic";
   font-size: 30px;
-  color: blue;
+  color: white;
   position:absolute;
   z-index:2;
-  left: 10px;
-  top: 150px;
+  margin-left: 2%;
+  top: 65%;
 }

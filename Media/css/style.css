@@ -87,19 +87,30 @@ cite {
 } 
 .hotel-header {
   background-color: #efefef;
+  display: inline-block;
+  position: relative;
   flex: 100%;
   margin-left: 74%;
   margin-right: 5%;
 }
-.hotel-header .hotel-button {
+.hotel-header span {
   background-color: rgba(255,255,255,0);
   border: 0;
   width: 100%;
   text-align: left;
-  position: relative;
 }
-.hotel-header button:hover {
-  display: block;
+.hotel-header .hotel-table {
+  display: none;
+  position: absolute;
+  background-color: #efefef;
+  width: 100%;
+  font-family: "Vollkorn-Regular";
+  /*min-width: 160px;*/
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);*/
+  /*padding: 12px 16px;  */
+}
+.container .hotel-header:hover .hotel-table{
+  display: table;
 }
 .copyrights{
   margin-top: 100%;

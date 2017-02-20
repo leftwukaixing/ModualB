@@ -1,35 +1,19 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Hotel V</title>
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
 	<link href='Media/prefix-free.js' rel='stylesheet' type='text/css'>
 	<link href="Media/Gallery Sample/js/photo-gallery.js" rel='stylesheet' type="text/css">
 	<link rel="stylesheet" href="Media/css/style.css">
-
 	</head>
+	
 	<body>
-
 	<div class="container">
 		<div class="hotel-header">
-			<span class="hotel-button">Book a room</span>
+			<span>Book a room</span>
 			<form class="hotel-table">
 				Arrival:<input type="text" name="arrival"/>
 				<br>
@@ -55,12 +39,12 @@
   					<option value="4">4</option>
 				</select>Children
 				<br>
-				<input type="button" name="" value="Check Avalibility">
+				<button name="Check Avalibility" class="hotel-btn">Check Avalibility</button>
 			</form>
 		</div>
 
 	<aside class="hotel-aside">
-		<div style="margin-left: 5%">
+		<div class="side-item">
 			<h2>Hotel V</h2>
 			<nav id="hotel-main-menu" >
 				<ul>
@@ -73,7 +57,7 @@
 	</aside>
 
 	<div class="hotel-secondbar">
-		<div style="margin-left: 5%">
+		<div class="side-item">
 			<h3>Hotel Detail</h3>
 			<nav id="hotel-main-menu" >
 				<ul>
@@ -83,10 +67,10 @@
 				</ul>
 			</nav>
 		</div>
-		<div style="margin-left: 5%">
+		<div class="side-item">
 			<h3>Check in</h3>
 		</div>
-		<div style="margin-left: 5%">
+		<div class="side-item">
 			<h3>Map and Location</h3>
 			<img src="Media/images/map.png" height="100px" width="96%">
 		</div>
@@ -119,30 +103,30 @@
 			<p>Cras scelerisque ex vitae massa venenatis mattis.Praesent vestibuluolestie lacus mauris sed elementum. Cras scelerisque ex vitae massa venenatis mattis.</p>
 		</div>
 
-		<div style="margin-left: 5%">
+		<div class="side-item">
 			<h3>Photo Gallary</h3>
-			<canvas id="photo-gallery" width="500" height="250" style="background-color:#efefef"></canvas>
+			<canvas id="photo-gallery"></canvas>
 			<p>we provide evenus for diffent type of events biuwheflasm; okpahw bka ncsija dbkqo Praesent vestibuluolestie lacus mauris sed elementum. Cras scelerisque ex vitae massa venenatis mattis.Praesent vestibuluolestie lacus mauris sed elementum. Cras scelerisque ex vitae massa venenatis mattis.</p>
 		</div>
-		<img src="Media/images/5018.png" width="93%" height="180px" style="margin-left: 5%; margin-right: 2%">
-		<div style="margin-left: 5%; width: 40%;float: left;">
+		<img src="Media/images/5018.png" class="side-img">
+		<div class="testimonials">
 			<h3>Testimonials</h3>
 			<table>
 				<tr>
-					<td style="background-color: gold;"></td>
+					<td class="td-boder"></td>
 					<td><cite>Great hotel and convienent location.Absolutely five stars!</cite></td>
 				</tr>
 			</table>
 			<p>we provide evenus for diffent type of events biuwheflasm; okpahw bka ncsija dbkqo Praesent vestibuluolestie lacus mauris sed elementum.we provide evenus for diffent type of events biuwheflasm; okpahw bka ncsija dbkqo Praesent vestibuluolestie lacus mauris sed elementum. </p>
 		</div>
-		<div style="">
-			<img src="Media/images/4912.png" style="width: 53%;height: 200px; float: right;margin-right: 2%">
-			<img src="Media/images/5029.png" style="width: 53%;height: 200px;float: right;margin-right: 2%;margin-top: 2px">
+		<div id="test-img">
+			<img src="Media/images/4912.png" >
+			<img src="Media/images/5029.png" >
 		</div>
 	</div>
 
 	<div class="hotel-ads">
-		<div style="margin-left: 5%">
+		<div class="side-item">
 			<h3>Things to do</h3>
 			<img src="Media/images/ads.png" height="80px" width="46%" alt="Advertisement">
 			<img src="Media/images/ads.png" height="80px" width="46%" alt="Advertisement">
@@ -152,7 +136,7 @@
 		</div>
 	</div>
 
-	<div style="width: 100%;">
+	<div id="footer">
 		<div class="hotel-footer">
 			<h3>Contact</h3>
 			<span>hello@example.com</span>
@@ -171,23 +155,17 @@
 		<div class="hotel-footer">
 			<h3>Hotels Group</h3>
 			<span>We have hotels all over the world</span>
-			<img src="Media/images/icon.gif" style="width: 30%;">
-			<img src="Media/images/icon.gif" style="width: 30%;">
-			<img src="Media/images/icon.gif" style="width: 30%;">
-			<img src="Media/images/icon.gif" style="width: 30%;">
-			<img src="Media/images/icon.gif" style="width: 30%;">
-			<img src="Media/images/icon.gif" style="width: 30%;">
+			<img src="Media/images/icon.gif" >
+			<img src="Media/images/icon.gif" >
+			<img src="Media/images/icon.gif" >
+			<img src="Media/images/icon.gif" >
+			<img src="Media/images/icon.gif" >
+			<img src="Media/images/icon.gif" >
 		</div>
 	</div>
 	</div>
 	</body>
 
 	<script type="text/javascript" src="Media/Gallery Sample/js/photo-gallery.js"></script>
-	<script type="text/javascript">
-		function bookRoom(){
-
-		}
-
-	</script>
 </html>
 

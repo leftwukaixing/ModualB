@@ -252,6 +252,9 @@ cite {
 .testimonials .td-boder {
   background-color: gold;
 }
+.test-table {
+  width:45% ;
+}
 #test-img img {
   width: 53%;
   height: 10%;

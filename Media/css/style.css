@@ -177,7 +177,15 @@ cite {
   margin-left: 5%;
   text-align: left;
 }
-.hotel-meeting img {
+.hotel-meeting {
+  /*margin-left:5%;*/
+  position:relative;
+  white-space: nowrap;
+  /*float: left;*/
+}
+#hotel-meeting img {
+  margin-right: 1%;
+  float: left;
   height: 240px;
   width: 32%;
   filter: grayscale(90%),brightness(120%);
@@ -186,7 +194,7 @@ cite {
   -o-filter: grayscale(1);
   -ms-filter: grayscale(1);
 }
-{
+#hotel-meeting img:hover {
     filter: grayscale(0),brightness(100%);
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
@@ -194,11 +202,13 @@ cite {
     -ms-filter: grayscale(0);
 }
 
-.hotel-meeting .img-text {
+#hotel-meeting .img-text {
+  /*float: left;*/
   font-family: "Vollkorn-BoldItalic";
   font-size: 30px;
-  color: white;
+  color: blue;
   position:absolute;
   z-index:2;
   left: 10px;
+  top: 150px;
 }
